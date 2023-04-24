@@ -1,1 +1,3 @@
 
+- name: JaCoCo Report
+  uses: Madrapps/jacoco-report@v1.3
