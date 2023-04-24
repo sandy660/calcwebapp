@@ -7,6 +7,8 @@ on:
     types: [opened, synchronize, reopened]
 jobs:
   build:
+    name: JaCoCo Report
+    uses: Madrapps/jacoco-report@v1.3
     name: Build and analyze
     runs-on: ubuntu-latest
     steps:
