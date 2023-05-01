@@ -17,5 +17,7 @@ public class TestCalculatorService {
 	public void testNull() {
 		assertEquals(0, CalculatorService.add(0,0));
 	}
-
+	@Test
+	public void testsustacion() {
+		assertEquals(10, CalculatorService.sutraccion(5, 5));
 }
