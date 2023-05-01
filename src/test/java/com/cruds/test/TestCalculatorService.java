@@ -1,23 +1,36 @@
-package com.cruds.test;
+package com.cruds.service;
 
-import static org.junit.Assert.*;
-
+import org.junit.Assert;
 import org.junit.Test;
 
-import com.cruds.service.CalculatorService;
-
-public class TestCalculatorService {
+public class CalculatorServiceTest {
 
 	@Test
-	public void testAdd() {
-		assertEquals(10, CalculatorService.add(5, 5));
+	public void add_ShouldReturnCorrectResult_WhenGivenTwoIntegers() {
+		// Arrange
+		int x = 2;
+		int y = 3;
+		int expectedResult = 5;
+
+		// Act
+		int result = CalculatorService.add(x, y);
+
+		// Assert
+		Assert.assertEquals(expectedResult, result);
 	}
 
 	@Test
-	public void testNull() {
-		assertEquals(0, CalculatorService.add(0,0));
+	public void subtract_ShouldReturnCorrectResult_WhenGivenTwoIntegers() {
+		// Arrange
+		int x = 5;
+		int y = 3;
+		int expectedResult = 2;
+
+		// Act
+		int result = CalculatorService.subtract(x, y);
+
+		// Assert
+		Assert.assertEquals(expectedResult, result);
 	}
-	@Test
-	public void testsustacion() {
-		assertEquals(10, CalculatorService.sutraccion(5, 5));
+
 }
